@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/magnitude_circle"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="7.0"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:id="@+id/magnitude" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7 km S of"
+            android:id="@+id/location_offset"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="San Francisco"
+            android:id="@+id/primary_location"
+            android:textColor="@color/textColorEarthquakeLocation"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mar 6, 2010"
+            android:id="@+id/date"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:gravity="right"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:id="@+id/time"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:gravity="right"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
