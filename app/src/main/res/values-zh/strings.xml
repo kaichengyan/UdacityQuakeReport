@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quake Report</string>
+    <string name="no_earthquake">未找到地震信息。</string>
+    <string name="no_internet">没有网络。</string>
+    <string name="settings_menu_item">设置</string>
+    <string name="settings_min_magnitude_label">最小震级</string>
+    <string name="settings_order_by_label">排序方式</string>
+    <string name="settings_order_by_magnitude_label">震级</string>
+    <string name="settings_order_by_most_recent_label">最近</string>
+    <string name="settings_title">地震设置</string>
+</resources>
