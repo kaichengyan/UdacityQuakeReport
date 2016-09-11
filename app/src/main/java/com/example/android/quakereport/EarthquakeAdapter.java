@@ -21,8 +21,8 @@ import java.util.List;
 public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
 
-    public EarthquakeAdapter(Context context, int resource, List<Earthquake> objects) {
-        super(context, resource, objects);
+    public EarthquakeAdapter(Context context, List<Earthquake> objects) {
+        super(context, 0, objects);
     }
 
     @Override
@@ -42,9 +42,6 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         TextView tvDate = (TextView) listItemView.findViewById(R.id.date);
         TextView tvTime = (TextView) listItemView.findViewById(R.id.time);
 
-//        Uri url = new Uri.parse(earthquake.getUrl());
-
-
         double mag = earthquake.getMagnitude();
         tvMagnitude.setText(formatMagnitude(mag));
         GradientDrawable magnitudeCircle = (GradientDrawable) tvMagnitude.getBackground();
@@ -63,7 +60,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
     }
 
     private String formatDate(Date date) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM DD, yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM d, yyyy");
         return dateFormat.format(date);
     }
 
